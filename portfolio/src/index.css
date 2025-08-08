@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+@keyframes text-gradient-x {
+  0%, 100% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+}
+
+.animate-text-gradient {
+  background-image: linear-gradient(to right, #009737, #8effb7); /* green-600 to green-300 */
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: text-gradient-x 3s ease-in-out infinite;
+}
+
+/* index.css */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: transform, opacity;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

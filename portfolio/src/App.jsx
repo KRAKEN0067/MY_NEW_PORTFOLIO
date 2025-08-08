@@ -1,0 +1,22 @@
+import React from "react";
+import Header from "./components/global/Header";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Contacts from "./pages/Contacts";
+import Projects from "./pages/Projects";
+
+const App = () => {
+  return (
+    <div>
+      <Header />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Contacts />
+    </div>
+  );
+};
+
+export default App;
