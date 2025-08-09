@@ -7,7 +7,6 @@ const Contacts = () => {
     <div>
       <section id="Contact" className="min-h-screen bg-gray-950 sm:p-8">
         <Contactform />
-
         <ContactWays />
       </section>
     </div>
