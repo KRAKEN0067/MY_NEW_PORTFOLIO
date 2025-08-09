@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ContactForm = () => {
+const Contactform = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
 
   const handleChange = (e) => {
@@ -75,4 +75,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Contactform;
