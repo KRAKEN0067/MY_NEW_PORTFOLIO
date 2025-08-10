@@ -10,7 +10,7 @@ const ProjectCard = ({
   btnHref,
 }) => {
   return (
-    <div className="mb-6 sm:mb-8 rounded-2xl bg-gray-900 border border-green-600 p-4 sm:p-6 hover:scale-[1.02] transition-transform duration-300 w-full max-w-sm mx-auto">
+    <div className="mb-6 sm:mb-8 rounded-2xl bg-gray-900 border border-green-600 p-4 sm:p-6 hover:scale-[1.02] transition-transform duration-300 w-full max-w-sm mx-auto hover:shadow-lg shadow-green-600">
       
       {/* Project Image */}
       <img
