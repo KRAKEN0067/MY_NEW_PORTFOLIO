@@ -64,14 +64,17 @@ const Skills = () => {
         </header>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           {/* Programming */}
-          <section aria-labelledby="programming-heading">
+          <section
+            aria-labelledby="programming-heading"
+            className="mb-8 md:mb-0"
+          >
             <h3
               id="programming-heading"
               className="text-white text-center font-semibold text-lg mb-1"
             >
               Languages
             </h3>
-            <div className="flex justify-center pb-4">
+            <div className="flex justify-center pb-1">
               <img src={downarrow} alt="downarrow" height={16} width={16} />
             </div>
             <div className="w-full space-y-4">
@@ -82,14 +85,17 @@ const Skills = () => {
           </section>
 
           {/* Frameworks */}
-          <section aria-labelledby="frameworks-heading">
+          <section
+            aria-labelledby="frameworks-heading"
+            className="mb-8 md:mb-0"
+          >
             <h3
               id="frameworks-heading"
               className="text-white text-center font-semibold text-lg mb-1"
             >
               Frameworks
             </h3>
-            <div className="flex justify-center pb-4">
+            <div className="flex justify-center pb-1">
               <img src={downarrow} alt="downarrow" height={16} width={16} />
             </div>
             <div className="w-full space-y-4">
@@ -100,14 +106,14 @@ const Skills = () => {
           </section>
 
           {/* Databases */}
-          <section aria-labelledby="databases-heading">
+          <section aria-labelledby="databases-heading" className="mb-8 md:mb-0">
             <h3
               id="databases-heading"
               className="text-white text-center font-semibold text-lg mb-1"
             >
               Databases
             </h3>
-            <div className="flex justify-center pb-4">
+            <div className="flex justify-center pb-1">
               <img src={downarrow} alt="downarrow" height={16} width={16} />
             </div>
             <div className="w-full space-y-4">
@@ -118,14 +124,14 @@ const Skills = () => {
           </section>
 
           {/* DevOps */}
-          <section aria-labelledby="devops-heading">
+          <section aria-labelledby="devops-heading" className="mb-8 md:mb-0">
             <h3
               id="devops-heading"
               className="text-white text-center font-semibold text-lg mb-1"
             >
               DevOps
             </h3>
-            <div className="flex justify-center pb-4">
+            <div className="flex justify-center pb-1">
               <img src={downarrow} alt="downarrow" height={16} width={16} />
             </div>
             <div className="w-full space-y-4">

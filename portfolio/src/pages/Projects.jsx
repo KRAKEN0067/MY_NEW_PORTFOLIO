@@ -44,7 +44,7 @@ const Projects = () => {
   return (
     <div>
       <section id="Projects" className="min-h-screen bg-gray-950 p-8 sm:p-16">
-        <h2 className="pb-8 text-4xl font-bold mb-8 text-center text-white underline decoration-green-600">
+        <h2 className="pb-8 text-4xl font-bold mb-8 text-center text-white underline decoration-green-600 mt-16">
           My Projects
         </h2>
 
