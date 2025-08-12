@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import RevealOnScroll from "../RevealOnScroll";
+import RevealOnScroll from "../global/RevealOnScroll";
 
 const Typewriter = () => {
   const words = [

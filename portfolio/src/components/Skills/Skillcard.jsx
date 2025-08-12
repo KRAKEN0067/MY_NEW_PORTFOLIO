@@ -1,4 +1,4 @@
-import RevealOnScroll from "../RevealOnScroll";
+import RevealOnScroll from "../global/RevealOnScroll";
 
 const Skillcard = ({ skill }) => {
   return (

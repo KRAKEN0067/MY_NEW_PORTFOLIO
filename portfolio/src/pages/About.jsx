@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import RevealOnScroll from "../components/RevealOnScroll";
+import RevealOnScroll from "../components/global/RevealOnScroll";
 const aboutCards = [
   {
     title: "Web Developer",

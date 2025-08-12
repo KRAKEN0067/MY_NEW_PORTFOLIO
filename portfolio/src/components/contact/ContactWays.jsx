@@ -2,6 +2,7 @@ import React from "react";
 import linkedin from "../../assets/images/linkedin.png";
 import github from "../../assets/images/github.png";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
+import { SiLinkedin } from "react-icons/si";
 
 
 const ContactWays = () => {
@@ -21,14 +22,7 @@ const ContactWays = () => {
             className="border-2 border-green-600 rounded-full w-16 h-16 hover:scale-110 transition-transform duration-400 hover:bg-green-600"
           />
         </a>
-        {/* <a href="">
-          {" "}
-          <img
-            src={insta}
-            alt="Instagram"
-            className="border-2 border-green-600 rounded-full w-16 h-16 hover:scale-110 transition-transform duration-400 hover:bg-green-600"
-          />
-        </a> */}
+        
         <a href="https://github.com/KRAKEN0067">
           {" "}
           <img

@@ -1,6 +1,6 @@
 import React from "react";
 import github from "../../assets/images/github.png";
-import RevealOnScroll from "../RevealOnScroll";
+import RevealOnScroll from "../global/RevealOnScroll";
 
 const ProjectCard = ({
   image,
