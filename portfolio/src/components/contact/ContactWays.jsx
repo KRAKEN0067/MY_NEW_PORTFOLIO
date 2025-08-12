@@ -1,12 +1,11 @@
 import React from "react";
 import linkedin from "../../assets/images/linkedin.png";
-import insta from "../../assets/images/insta.png";
 import github from "../../assets/images/github.png";
+import { TiSocialLinkedinCircular } from "react-icons/ti";
+
 
 const ContactWays = () => {
-  const handleClick = () => {
-    window.open("https://www.linkedin.com/in/your-profile/", "_blank");
-  };
+  
 
   return (
     <div className="pb-8 pt-4 rounded-2xl shadow-green-600">

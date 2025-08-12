@@ -8,16 +8,6 @@ import weatherapp from '../assets/images/projectcardimages/weatherapp.png'
 const Projects = () => {
   const projects = [
     {
-      image:
-        "https://cdn.tailgrids.com/assets/images/application/cards/card-01/image-01.jpg",
-      CardTitle: "50+ Best creative website themes & templates",
-      titleHref: "/#",
-      btnHref: "/#",
-      CardDescription:
-        "Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
-      Button: "View Details",
-    },
-    {
       image:employee_payroll1,
       CardTitle: "Employee Management System",
       titleHref: "/#",
