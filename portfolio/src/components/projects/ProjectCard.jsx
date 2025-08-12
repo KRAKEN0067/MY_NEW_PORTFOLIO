@@ -1,5 +1,6 @@
 import React from "react";
 import github from "../../assets/images/github.png";
+import RevealOnScroll from "../RevealOnScroll";
 
 const ProjectCard = ({
   image,
@@ -10,6 +11,7 @@ const ProjectCard = ({
   btnHref,
 }) => {
   return (
+    <RevealOnScroll>
     <div className="mb-6 sm:mb-8 rounded-2xl bg-gray-900 border border-green-600 p-4 sm:p-6 hover:scale-[1.02] transition-transform duration-300 w-full max-w-sm mx-auto hover:shadow-lg shadow-green-600">
       
       {/* Project Image */}
@@ -50,6 +52,7 @@ const ProjectCard = ({
         )}
       </div>
     </div>
+    </RevealOnScroll>
   );
 };
 

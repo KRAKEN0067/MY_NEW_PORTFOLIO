@@ -55,7 +55,7 @@ const Typewriter = () => {
     <RevealOnScroll>
       <div className="w-full h-full flex justify-center items-center pt-8">
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white underline">
-          {text}
+          {text} <span className="text-green-600 text-shadow-glow">|</span>
         </h1>
       </div>
     </RevealOnScroll>
