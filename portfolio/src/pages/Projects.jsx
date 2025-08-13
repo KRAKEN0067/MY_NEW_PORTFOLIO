@@ -33,7 +33,7 @@ const Projects = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-950 to-black">
       {/* Projects Grid Section */}
-      <section className="relative py-16 pb-32">
+      <section id="Projects" className="relative py-16 pb-32">
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -54,6 +54,11 @@ const Projects = () => {
           </div>
 
           {/* Call to Action */}
+          <br />
+          <br />
+          <br />
+          <hr className="text-gray-500"/>
+          <br />
           <div className="text-center mt-16">
             <div className="bg-gradient-to-r from-gray-800/30 to-gray-900/30 backdrop-blur-sm border border-gray-700 rounded-3xl p-12 max-w-4xl mx-auto">
               <div className="inline-flex items-center justify-center p-4 bg-green-500/10 border border-green-500/20 rounded-full mb-6">
