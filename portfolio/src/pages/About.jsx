@@ -1,24 +1,26 @@
 import React, { useEffect } from "react";
 import RevealOnScroll from "../components/global/RevealOnScroll";
+import { FaCode, FaBrain, FaUsers, FaBookOpen } from "react-icons/fa";
+
 const aboutCards = [
   {
     title: "Web Developer",
-    icon: "💻",
+    icon: <FaCode className="text-3xl text-white group-hover:text-green-600 transition-colors duration-300" />,
     desc: "Building modern, responsive web apps with React, Tailwind, and more.",
   },
   {
     title: "Problem Solver",
-    icon: "🧠",
+    icon: <FaBrain className="text-3xl text-white group-hover:text-green-600 transition-colors duration-300" />,
     desc: "Enjoys tackling coding challenges and learning new technologies.",
   },
   {
     title: "Team Player",
-    icon: "🤝",
+    icon: <FaUsers className="text-3xl text-white group-hover:text-green-600 transition-colors duration-300" />,
     desc: "Collaborates effectively in teams and values clear communication.",
   },
   {
     title: "Lifelong Learner",
-    icon: "📚",
+    icon: <FaBookOpen className="text-3xl text-white group-hover:text-green-600 transition-colors duration-300" />,
     desc: "Always exploring new frameworks, tools, and best practices.",
   },
 ];
@@ -47,7 +49,7 @@ const About = () => {
             {aboutCards.map((card, idx) => (
               <div
                 key={idx}
-                className="bg-gray-900 border border-green-600 rounded-xl shadow-md px-6 py-4 flex flex-col items-center w-40 hover:scale-105 transition-transform duration-300"
+                className="group bg-gray-900 border border-green-600 rounded-xl shadow-md px-6 py-4 flex flex-col items-center w-40 hover:scale-105 hover:shadow-lg hover:shadow-green-600/20 transition-all duration-300"
               >
                 <div className="text-3xl mb-2">{card.icon}</div>
                 <div className="text-lg font-semibold text-green-400 mb-1">

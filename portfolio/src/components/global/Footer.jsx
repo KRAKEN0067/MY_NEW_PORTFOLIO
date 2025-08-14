@@ -30,7 +30,7 @@ const Footer = () => {
                 { name: "About", href: "#About" },
                 { name: "Skills", href: "#Skills" },
                 { name: "Projects", href: "#Projects" },
-                { name: "Contact", href: "#contact" }
+                { name: "Contact", href: "#Contact" }
               ].map((link) => (
                 <li key={link.name}>
                   <a 
@@ -94,14 +94,14 @@ const Footer = () => {
         </div>
 
         {/* Bottom section */}
-        <div className="mt-8 text-center">
+        {/* <div className="mt-8 text-center">
           <p className="text-gray-500 text-sm">
             © 2025 Aryan Baakle. All rights reserved.
           </p>
           <p className="text-gray-600 text-xs mt-2">
             Built with React & Tailwind CSS
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

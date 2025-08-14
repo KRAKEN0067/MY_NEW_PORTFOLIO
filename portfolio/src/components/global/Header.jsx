@@ -48,20 +48,17 @@ const Header = () => {
         onClick={toggleMobileMenu}
         aria-label="Toggle Menu"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
+        <div className="w-6 h-6 relative">
+          <span className={`absolute w-6 h-0.5 bg-white rounded-full transition-all duration-300 ${
+            isOpen ? 'rotate-45 translate-y-0' : '-translate-y-2'
+          }`}></span>
+          <span className={`absolute w-6 h-0.5 bg-white rounded-full transition-all duration-300 ${
+            isOpen ? 'opacity-0' : 'opacity-100'
+          }`}></span>
+          <span className={`absolute w-6 h-0.5 bg-white rounded-full transition-all duration-300 ${
+            isOpen ? '-rotate-45 translate-y-0' : 'translate-y-2'
+          }`}></span>
+        </div>
       </button>
 
       <div
