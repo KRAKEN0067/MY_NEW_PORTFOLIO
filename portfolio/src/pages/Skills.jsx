@@ -50,7 +50,7 @@ const Skills = () => {
     <main>
       <section
         id="Skills"
-        className="min-h-screen bg-gray-950 px-4 sm:px-6 lg:px-16 py-8 pb-16"
+        className="min-h-screen bg-gray-950 px-4 sm:px-6 lg:px-16 py-8 pb-24"
         aria-labelledby="skills-heading"
         tabIndex={-1}
       >
