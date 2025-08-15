@@ -5,8 +5,8 @@ const Name = () => {
   return (
     <RevealOnScroll>
       <div className="flex justify-center items-center pt-64">
-        <h1 className="animate-text-gradient text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-green-600 text-shadow-glow">
-          ARYAN BAAKLE
+        <h1 className="animate-text-gradient text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-green-600 text-shadow-glow font-serif italic pb-10">
+          Aryan Baakle
         </h1>
       </div>
     </RevealOnScroll>
