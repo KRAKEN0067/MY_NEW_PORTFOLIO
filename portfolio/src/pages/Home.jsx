@@ -12,7 +12,7 @@ const Home = () => {
     <main>
       <section
         id="Home"
-        className="min-screen bg-gray-950 pb-64"
+        className="min-screen bg-gray-950 flex flex-col justify-center items-center pt-32 pb-32"
         aria-labelledby="home-heading"
         tabIndex={-1}
       >

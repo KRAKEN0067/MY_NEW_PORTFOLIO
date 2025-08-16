@@ -55,22 +55,22 @@ const Typewriter = () => {
 
   return (
     <RevealOnScroll>
-      <div className="w-full h-full flex flex-col justify-center items-center pt-8 space-y-8">
+      <div className="w-full h-full flex flex-col justify-center items-center pt-4 sm:pt-6 md:pt-8 space-y-4 sm:space-y-6 md:space-y-8 px-4 sm:px-6">
         {/* Main Typewriter Container */}
-        <div className="relative group">
+        <div className="relative group w-full max-w-4xl">
           {/* Background glow effect */}
-          <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-green-400/10 to-green-500/20 rounded-2xl blur-3xl scale-110 group-hover:scale-125 transition-transform duration-1000"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-green-400/10 to-green-500/20 rounded-xl sm:rounded-2xl blur-2xl sm:blur-3xl scale-105 sm:scale-110 group-hover:scale-110 sm:group-hover:scale-125 transition-transform duration-1000"></div>
           
           {/* Main content container */}
-          <div className="relative bg-black/20 backdrop-blur-sm border border-green-500/30 rounded-2xl px-10 py-8 shadow-2xl hover:border-green-400/50 transition-all duration-500 group-hover:shadow-green-500/25">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight">
+          <div className="relative bg-black/20 backdrop-blur-sm border border-green-500/30 rounded-xl sm:rounded-2xl px-4 py-4 sm:px-6 sm:py-6 md:px-10 md:py-8 shadow-xl sm:shadow-2xl hover:border-green-400/50 transition-all duration-500 group-hover:shadow-green-500/25">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white tracking-tight leading-tight text-center">
               <span className="inline-block">
                 <span className="text-green-400 font-mono transition-all duration-300 group-hover:text-green-300">[</span>
                 <span className="relative">
                   {text}
                   {/* Enhanced blinking cursor */}
                   <span 
-                    className="absolute right-0 top-0 w-1.5 h-full bg-green-400 rounded-sm cursor-blink glow-pulse"
+                    className="absolute right-0 top-0 w-0.5 sm:w-1 md:w-1.5 h-full bg-green-400 rounded-sm cursor-blink glow-pulse"
                   />
                 </span>
                 <span className="text-green-400 font-mono transition-all duration-300 group-hover:text-green-300">]</span>
@@ -80,21 +80,21 @@ const Typewriter = () => {
         </div>
 
         {/* Subtitle with enhanced animated gradient */}
-        <div className="text-center transform hover:scale-105 transition-transform duration-300">
-          <p className="text-lg md:text-xl text-gray-300 font-medium animate-text-gradient">
+        <div className="text-center transform hover:scale-105 transition-transform duration-300 px-4">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 font-medium animate-text-gradient leading-relaxed">
             Crafting digital experiences with code
           </p>
         </div>
 
         {/* Enhanced decorative elements with floating animations */}
-        <div className="flex space-x-3 mt-6">
-          <div className="w-3 h-3 bg-green-400 rounded-full animate-float shadow-lg shadow-green-400/50"></div>
-          <div className="w-3 h-3 bg-green-500 rounded-full animate-float-delay-1 shadow-lg shadow-green-500/50"></div>
-          <div className="w-3 h-3 bg-green-600 rounded-full animate-float-delay-2 shadow-lg shadow-green-600/50"></div>
+        <div className="flex space-x-2 sm:space-x-3 mt-4 sm:mt-6">
+          <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-400 rounded-full animate-float shadow-lg shadow-green-400/50"></div>
+          <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-500 rounded-full animate-float-delay-1 shadow-lg shadow-green-500/50"></div>
+          <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-600 rounded-full animate-float-delay-2 shadow-lg shadow-green-600/50"></div>
         </div>
 
         {/* Additional decorative line */}
-        <div className="w-32 h-0.5 bg-gradient-to-r from-transparent via-green-400 to-transparent opacity-60"></div>
+        <div className="w-20 sm:w-24 md:w-32 h-0.5 bg-gradient-to-r from-transparent via-green-400 to-transparent opacity-60"></div>
       </div>
     </RevealOnScroll>
   );
