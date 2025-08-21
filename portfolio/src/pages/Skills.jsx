@@ -70,13 +70,15 @@ const Skills = () => {
           >
             <h3
               id="programming-heading"
-              className="text-white text-center font-semibold text-lg mb-1"
+              className="text-white text-center font-semibold text-lg mb-1 shadow-2xl shadow-green-600/50 rounded-xl p-2 shadow-bottom shadow-bottom-green-600"
             >
               Languages
             </h3>
-            <div className="flex justify-center pb-1">
+            
+            {/* <div className="flex justify-center pb-1">
               <img src={downarrow} alt="downarrow" height={16} width={16} />
-            </div>
+            </div> */}
+            <div className="pb-4"></div>
             <div className="w-full space-y-4">
               {Programming.map((skill, index) => (
                 <Skillcard key={index} skill={skill} />
@@ -91,13 +93,14 @@ const Skills = () => {
           >
             <h3
               id="frameworks-heading"
-              className="text-white text-center font-semibold text-lg mb-1"
+              className="text-white text-center font-semibold text-lg mb-1 shadow-2xl shadow-green-600/50 rounded-xl p-2 shadow-bottom shadow-bottom-green-600"
             >
               Frameworks
             </h3>
-            <div className="flex justify-center pb-1">
+            {/* <div className="flex justify-center pb-1">
               <img src={downarrow} alt="downarrow" height={16} width={16} />
-            </div>
+            </div> */}
+            <div className="pb-4"></div>
             <div className="w-full space-y-4">
               {Frameworks.map((skill, index) => (
                 <Skillcard key={index} skill={skill} />
@@ -109,13 +112,14 @@ const Skills = () => {
           <section aria-labelledby="databases-heading" className="mb-8 md:mb-0">
             <h3
               id="databases-heading"
-              className="text-white text-center font-semibold text-lg mb-1"
+              className="text-white text-center font-semibold text-lg mb-1 shadow-2xl shadow-green-600/50 rounded-xl p-2 shadow-bottom shadow-bottom-green-600"
             >
               Databases
             </h3>
-            <div className="flex justify-center pb-1">
+            {/* <div className="flex justify-center pb-1">
               <img src={downarrow} alt="downarrow" height={16} width={16} />
-            </div>
+            </div> */}
+            <div className="pb-4"></div>
             <div className="w-full space-y-4">
               {databases.map((skill, index) => (
                 <Skillcard key={index} skill={skill} />
@@ -127,13 +131,14 @@ const Skills = () => {
           <section aria-labelledby="devops-heading" className="mb-8 md:mb-0">
             <h3
               id="devops-heading"
-              className="text-white text-center font-semibold text-lg mb-1"
+              className="text-white text-center font-semibold text-lg mb-1 shadow-2xl shadow-green-600/50 rounded-xl p-2 shadow-bottom shadow-bottom-green-600"
             >
               DevOps
             </h3>
-            <div className="flex justify-center pb-1">
+            {/* <div className="flex justify-center pb-1">
               <img src={downarrow} alt="downarrow" height={16} width={16} />
-            </div>
+            </div> */}
+            <div className="pb-4"></div>
             <div className="w-full space-y-4">
               {devops.map((skill, index) => (
                 <Skillcard key={index} skill={skill} />
