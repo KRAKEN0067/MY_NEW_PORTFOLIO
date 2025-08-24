@@ -15,10 +15,10 @@ const ProjectCard = ({
 }) => {
   return (
     <RevealOnScroll>
-      <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-sm border border-gray-700/50 hover:border-green-500/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/25">
+      <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-sm border border-gray-700/50 hover:border-green-500/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/25 flex flex-col h-full">
         
         {/* Project Image */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden flex-shrink-0">
           <img
             src={image}
             alt={CardTitle}
@@ -55,9 +55,9 @@ const ProjectCard = ({
         </div>
 
         {/* Project Content */}
-        <div className="p-6">
+        <div className="p-6 flex flex-col flex-grow">
           {/* Category Badge */}
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center justify-between mb-4 flex-shrink-0">
             <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-500/10 text-green-400 border border-green-500/20">
               <FaCode className="mr-1" size={12} />
               {category}
@@ -65,7 +65,7 @@ const ProjectCard = ({
           </div>
 
           {/* Project Title */}
-          <h3 className="mb-3">
+          <h3 className="mb-3 flex-shrink-0">
             <a
               href={titleHref || "/#"}
               className="block text-xl font-bold text-white hover:text-green-400 transition-colors duration-300 group-hover:text-green-400"
@@ -75,13 +75,13 @@ const ProjectCard = ({
           </h3>
 
           {/* Project Description */}
-          <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">
+          <p className="text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
             {CardDescription}
           </p>
 
           {/* Technology Tags */}
           {technologies.length > 0 && (
-            <div className="mb-4">
+            <div className="mb-4 flex-shrink-0">
               <div className="flex flex-wrap gap-2">
                 {technologies.map((tech, index) => (
                   <span
@@ -97,7 +97,7 @@ const ProjectCard = ({
 
           {/* Action Button */}
           {Button && (
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center mt-auto flex-shrink-0">
               <a
                 href={btnHref || "#"}
                 target="_blank"

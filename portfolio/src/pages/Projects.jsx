@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "../components/projects/ProjectCard";
 import employee_payroll1 from '../assets/images/projectcardimages/employee_payroll1.png'
 import weatherapp from '../assets/images/projectcardimages/weatherapp.png'
+import iris_flower_classification from '../assets/images/projectcardimages/iris-flower-classification.png'
 import { FaGithub, FaExternalLinkAlt, FaRocket } from "react-icons/fa";
 
 const Projects = () => {
@@ -27,6 +28,17 @@ const Projects = () => {
       Button: "https://github.com/KRAKEN0067/weatherapp",
       technologies: ["Flask", "Python", "HTML/CSS", "Weather API"],
       category: "Web App"
+    },
+    {
+      image: iris_flower_classification,
+      CardTitle: "Iris Flower Classification",
+      titleHref: "https://iris-flower-classification-kraken.streamlit.app/",
+      btnHref: "https://github.com/KRAKEN0067/Iris-flower-classification",
+      CardDescription:
+        "This is a Machine Learning project that classifies iris flowers into three species based on their features. Made using Python and scikit-learn library",
+      Button: "https://github.com/KRAKEN0067/Iris-flower-classification",
+      technologies: ["Python", "scikit-learn", "Machine Learning", "Data Science"],
+      category: "Machine Learning"
     },
   ];
 
